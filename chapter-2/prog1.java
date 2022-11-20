@@ -1,3 +1,4 @@
+//infinite recursion
 class demo
 {
   static void m()
