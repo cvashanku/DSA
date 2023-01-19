@@ -1,0 +1,11 @@
+01. Introduction to Strings
+---------------------------
+collection or group of characters which are enclosed between double quotes are called as string, 
+like other programming languages, java provide support for so many inbuilt methods to perform basic operations on string like length, 
+concatenation, substring, case conversions, char searching and char replacements etc. In java Strings are treated as Objects but not Primitives. 
+the following are different types of Strings existed in java.
+
+1. String -----------------> java.lang
+2. StringBuffer -----------> java.lang
+3. StringBuilder ----------> java.lang
+4. StringTokenizer --------> java.util

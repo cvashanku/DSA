@@ -1,0 +1,39 @@
+02. Mutablitity and Immutablity
+-------------------------------
+String class objects are immutable objects, these objects are not allowing modifications, 
+if we are trying to perform any modifications with those modifications a new String object will be created with modified content,
+ Original object will be remains same. This concept is called as immutability i.e. modifications are not allowed.
+
+Ex:
+---
+	java.lang.String 
+
+StringBuffer/StringBuilder class objects are mutable objects, these objects are allowing modifications, 
+if we are trying to perform any modifications those modifications will be reflected on the same object,Original object will be updated.
+ This concept is called as mutability i.e. modifications are allowed.
+
+Ex:
+---
+	java.lang.StringBuffer
+	java.lang.StringBuilder
+
+Note: java.util.StringTokenizer is not a part of our orginal string concept it is used divide the given string into tokens.
+
+Note:
+-----
+		String ---------------> immutable obj
+		StringBuffer ---------> mutable obj at a time only one obj is allowed
+		StringBuilder --------> mutable obj at a time any number of obj's allowed
+		StringTokenizer ------> divide the given str into tokens
+
+Reference and Content comparision
+---------------------------------
+primitives --------> == for content comparision, we dn't have reference comparision
+objects -----------> == for ref comparision and .equals() for ref comprision
+
+In String class .equals() method is overriden for content comparision hence .equlas() return "true" 
+if content is same even though the objects are different else return "false".
+
+
+In StringBuffer class .equals() method is not overriden for content comparision 
+hence object class .equlas() method will invoke which is designed for address or reference comparision.
