@@ -1,0 +1,31 @@
+Heap and SCP memory areas
+-----------------------------
+Heap:
+----
+=> when an object is created by using new keyword, it will be placed in side HEAP.
+=> when we are performing any modifications on the str obj, with those modifications a new obj will be created in HEAP area.
+=> when we are performing any modifications on the str obj, if these is content is same after modificaation, no new object will be created.
+
+SCP:
+----
+=> string constant pool
+=> if any str object is repeatedly required then java creates such type of objects in SCP
+=> when a string literal found, that literal object will be created in SCP.
+=> when we are performing any modifications on the str obj, with those modifications a new obj will be created in HEAP area but this rules is not applicable for SCP.
+=> when we are performing any modifications on the str obj, if these is content is same after modificaation, no new object will be created. 
+
+Ex1:
+----
+String s = new String("prakash");
+
+heap -----> 1
+scp ------> 1
+total ----> 2
+
+Ex2:
+----
+String s = "prakash";
+
+heap -----> 0
+scp ------> 1
+total ----> 1
