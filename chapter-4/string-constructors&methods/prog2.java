@@ -1,4 +1,4 @@
-//program to creates String object with given literals
+//program to creates String object with given literals.
 
 class Test
 {

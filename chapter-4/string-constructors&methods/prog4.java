@@ -1,4 +1,4 @@
-//program to creates a String object with given byte[]
+//program to creates a String object with given byte[].
 
 class Test
 {

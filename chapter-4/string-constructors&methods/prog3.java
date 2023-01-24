@@ -1,4 +1,4 @@
-//program to creates a string objects with given char[]
+//program to creates a string objects with given char[].
 
 class Test
 {

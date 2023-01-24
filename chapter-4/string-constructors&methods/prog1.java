@@ -1,4 +1,4 @@
-//program to demonstrate an empty String
+//program to demonstrate an empty String.
 
 class Test
 {
