@@ -1,0 +1,10 @@
+Like other programming languages, java has given predefined methods to work on String 
+the following are the constructors and methods existed in java.lang.String class.
+
+String() 			-------------> an empty string
+String(String_Literal)   --------> creates string object with given literal
+String(char[])           --------> it creates a string object with given char[]
+String(char[],int,int) ----------> it creates a string object with begin to no char
+String(byte[]) ------------------> it creates a string object with byte[]
+String(StringBuilder) -----------> it creates a string object with given StringBuilder
+String(StringBuffer) ------------> it creates a string object with given StringBuffer
