@@ -1,0 +1,20 @@
+Methods Present in String class
+-------------------------------
+int length() -------> returns number of characters present in String
+boolean isEmpty() --> returns true if the given string is empty else false
+char charAt(int) ---> return char located at the given index value
+boolean startsWith(str) ----> returns true if the given string starts with another str
+boolean endsWith(str) ------> returns true if the given string ends with another str
+char[] toCharArray() ----> to covert given string into char[]
+byte[] getBytes() ----> to convert given string into byte[]
+boolean equals(String) ---> returns true if the two strings are having same content by considering case
+boolean equalsIgnore(String) ---> returns true if the two strings are having same content by ignoring case
+int indexOf(char) ---> returns char located at the given index
+int lastIndexOf(char) ---> reutns char located at last occurrence
+String toLowerCase() ----> to convert given string into lower case
+String toUpperCase() ----> to convert given string into upper case
+String substring(int) -----> returns substring from the given location
+String substring(int,int) -> returns substring from start index to end index-1
+String concat(String) ----> concatenation (adding)
+String replace(old,char) ----> it replaces old char with new char
+String[] split(delimiter) ----> it divides the given string into tokens based on deli
