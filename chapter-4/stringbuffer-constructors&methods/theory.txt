@@ -1,0 +1,12 @@
+if the content is fixed not changing in our program ---> String
+if the content is not fixed keep on changing ----------> StringBuffer or StringBuilder
+
+constructors:
+-------------
+1) StringBuffer(); it creates a new StringBuffer object with 16 as default capacity
+2) StringBuffer(int); it creates a new StringBuffer object with capacity as given int
+3) StringBuffer(String); it creates sb obj with given string capacity = 16 + len of str
+
+if max capacity is readched then string buffer capacity will be automatically increased based on the following formula.
+
+new capacity = (old capacity+1)*2
