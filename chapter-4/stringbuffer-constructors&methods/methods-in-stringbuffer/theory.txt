@@ -1,0 +1,14 @@
+Methods present in java.lang.StringBuffer:
+------------------------------------------
+1) int length() ----> return num of char present in sb
+2) int capacity() --> returns max num of char that sb can allow
+3) void setLength(int) ---> it sets the length of sb object
+4) void trimToSize() -----> it removes unwanted spaces in sb
+5) void ensureCapacity(int) -> it increase capacity manually
+6) char charAt(int) ------> returns char at given location
+7) void setCharAt(int,char) --> it replaces char present at given loc with new char
+8) void deleteCharAt(int) ----> it removes char located at given loc
+9) StringBuffer append(obj) --> it appends (adds last) the given object
+10) StringBuffer insert(int,obj) --> it adds the given obj at location
+11) StringBuffer delete(int,int) --> it deletes the content from begin to end-1
+12) StringBuffer reverse() --------> it reverse the conent of sb object
