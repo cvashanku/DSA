@@ -1,0 +1,15 @@
+08. StringTokenizer
+-------------------
+It is used to divide the given string into tokens, based on some delimiter (space). it is existed in java.util.StringTokenizer
+
+Ex:
+---
+	"java is very easy" -------> ["java","is","very","easy"]
+	"03-01-2023" --------------> ["03","01","2023"]
+	"07:57:34" ----------------> ["07","57","34"]
+
+StringTokenizer st = new StringTokenizer(String,Delimieter);
+
+int countTokens()  ------> num of tokens existed
+boolean hasMoreTokens() -> return true if there is a token
+String nextToken() ------> return current token and transfers to net token
