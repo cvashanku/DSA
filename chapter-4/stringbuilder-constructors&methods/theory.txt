@@ -1,0 +1,22 @@
+06. StringBuilder class constructors and methods
+------------------------------------------------
+It is exaclty same as StringBuffer, it contains constructors and methods as it is from java.lang.StringBuffer, 
+the only difference between StringBuffer and StringbUilder is 
+
+at a time only one thread is allowed to access/modifications in StringBuffer
+at a time multiple threads are allowed to access/modifications in StringBuilder
+
+
+07. StringBuffer vs StringBuilder
+---------------------------------
+
+StringBuffer 							StringBuilder
+------------							-------------
+1. 1.0 version 							1. 1.5 version
+2. synchronized 						2. not synchronized
+3. only one thread 						3. mutliple threads
+4. sequential execution 				        4. parallel execution
+5. increaese app time 					        5. decreases app time
+6. performance improved 				        6. performance not improved
+7. thread-safe 							7. not thread-safe
+8. deprecated/outdated 					        8. not deprecated/not outdated
