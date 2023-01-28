@@ -1,0 +1,18 @@
+userdefined character classes:
+------------------------------
+[abc] 			either 'a' or 'b' or 'c'
+[^abc]			except either 'a' or 'b' or 'c'
+[0-9]			all digits
+[^0-9]			except digits
+[a-z] 			lower case characters
+[^a-z]			except lower case characters
+[A-Z]			upper case characters
+[^A-Z]			except upper case characters
+[a-zA-Z]		lower and upper case characters
+[^a-zA-Z]		except lower and upper case characters
+[a-zA-Z0-9]		lower, upper and digits
+[^a-zA-Z0-9]	except lower, upper and digits
+
+Ex:
+---
+Pattern p = Pattern.compile("format");

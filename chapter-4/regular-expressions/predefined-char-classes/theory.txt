@@ -1,0 +1,65 @@
+Regular Expressions and its applications
+--------------------------------------------
+a group of strings according to a particular pattern or format is called as regular exp
+
+steps to prepare re object
+--------------------------
+1) import java.util.regex.*;
+2) pattern object ------------> format for data
+3) matcher object ------------> target string is in format
+
+Validate Mobile Number:
+-----------------------
+	123 ------------> No
+	1234567890 -----> No
+	9123456789 -----> Yes
+
+	format: [6-9][0-9]{9}
+
+predefined character classes
+----------------------------
+\\s 			space character
+\\S 			except space character
+\\d 			digit
+\\D 			except digit
+\\w 			word character (a-z,A-Z,0-9)
+\\W 			except word character (spaces and special characters)
+
+Ex:
+---
+Pattern p = Pattern.compile("\\s");
+Pattern p = Pattern.compile("\\S");
+Pattern p = Pattern.compile("\\d");
+Pattern p = Pattern.compile("\\D");
+Pattern p = Pattern.compile("\\w");
+Pattern p = Pattern.compile("\\W");
+
+
+userdefined character classes:
+------------------------------
+[abc] 			either 'a' or 'b' or 'c'
+[^abc]			except either 'a' or 'b' or 'c'
+[0-9]			all digits
+[^0-9]			except digits
+[a-z] 			lower case characters
+[^a-z]			except lower case characters
+[A-Z]			upper case characters
+[^A-Z]			except upper case characters
+[a-zA-Z]		lower and upper case characters
+[^a-zA-Z]		except lower and upper case characters
+[a-zA-Z0-9]		lower, upper and digits
+[^a-zA-Z0-9]	except lower, upper and digits
+
+Ex:
+---
+Pattern p = Pattern.compile("format");
+
+
+quantifiers:
+------------
+a 		exactly one a
+a+ 		one or more a's
+a* 		zero or more a's
+a? 		zero or one a
+a{m} 	exactly 'm' number of a's
+a{m,n}	min 'm' numebr of a's and max 'n' number of a's

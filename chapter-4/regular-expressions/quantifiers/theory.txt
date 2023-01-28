@@ -1,0 +1,8 @@
+quantifiers:
+------------
+a 		exactly one a
+a+ 		one or more a's
+a* 		zero or more a's
+a? 		zero or one a
+a{m} 	        exactly 'm' number of a's
+a{m,n}	        min 'm' numebr of a's and max 'n' number of a's
