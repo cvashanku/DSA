@@ -1,0 +1,52 @@
+06. Collisions
+--------------
+When a hash function generates the same index for the two or more different keys, the problem is know as collision. A hash function should return unique address for each key, but practically it is not possible.
+
+properties of a good hash function
+----------------------------------
+1) it should provide a uniform distribution of hash values.
+2) choose a hash function, which can be computed quickly and returns unique id.
+3) choose a hash function, with a good collision resoulition algorithms.
+4) choose a hash function, which uses the nessary info provided in the key.
+5) it should have a high load factor for given set of keys.
+
+StringBuffer ----> 16 => 34
+Hashtable -------> 10 => 20 
+
+07. Collision resolution methods (linear, quadratic and chaining)
+-----------------------------------------------------------------
+Hash collisions are practlly unavoidable when hashing a large number of keys. The following are the techniques that are used to find the alternative location in the hash table for the given objects.
+
+1. Linear Probing
+2. Quadratic Probing
+3. Separate Chaining
+
+08. Linear probing implementation
+---------------------------------
+
+Insert 3, 13, 23, 33, 43, 53, 63
+
+
+i=5, hc=3+5=8%10=8
+i=6, hc=8+6=14%10=4
+i=7, hc=4+7=11%10 = 1, a[1] = 53
+
+a[1] = 53
+a[3] = 3
+a[4] = 13
+a[6] = 23
+a[8] = 43
+a[9] = 33
+
+hc = 63%10 = 3
+i=0 ---> hc = 3+0 = 3, not
+i=1 ---> hc = 3+1 = 4%10 = 4, not
+i=2 ---> hc = 4+2 = 6%10 = 6, not
+i=3 ---> hc = 6+3 = 9%10 = 9, not
+i=4 ---> hc = 9+4 = 13%10 = 3, not
+i=5 ---> hc = 3+5 = 8%10 = 8, not
+i=6 ---> hc = 8+6 = 14%10 = 4, not
+i=7 ---> hc = 4+7 = 11%10 = 1, not
+i=8 ---> hc = 1+8 = 9%10 = 9, not
+i=9 ---> hc = 9+9 = 18%10 = 8, not
+i=10 --> loop fails

@@ -1,0 +1,54 @@
+Hashtable data structure:
+~~~~~~~~~~~~~~~~~~~~~~~~~
+01. Introduction
+02. Hashtable
+03. Operations on Hashtable
+04. Hash function 
+05. Implementation Hashtable
+06. Collisions
+07. Collision resolution methods (linear, quadratic and chaining)
+08. Linear probing implementation
+09. Quadratic probing implementation
+10. Separate Chaining implementation
+
+Introduction:
+-------------
+In the case of searhcing algorithms, consider the problem of searching for a value in an array. 
+if the array is not sorted then we have to compare the given key value with all elements one-by-one, it will take time complexity as O(n). 
+if the array is sorted then time complexity O(logn).
+
+linear -----> O(n)
+binary -----> O(logn)
+
+It is possible to get the location of given key, by using some magic method. almost it takes O(1) constant time. 
+Hash method or Hash function works just like that magic method.
+
+Hashtable
+---------
+Hashtable is a data structure that maps keys to the values. Each position of the hashtable is called as slot. 
+The hashtable uses hashfunction to calculate an index of an array.
+
+the process of storing data using a hash function in a hashtable is as follows
+
+=> create an array of size N, this array is called as hashtable.
+=> find the hash code of the given data by using hash function.
+=> take modulo of hash code with table size to get index of array to store the data.
+=> finally store this data in the position.
+
+the process of searching value in Hashtable using a hash function is as follows
+
+=> find hash code of the key we are searhcing by passing that data into hash function
+=> take a modulo division with hash table size
+=> retrive the value from the index position which is given by hash function
+
+we can implement the following basic operations on hashtable
+
+1) inserting data
+2) deleting data
+3) searching for data
+4) implementation of hash function
+
+hash function / hash method:
+----------------------------
+a hash function or hash method is a function/method that generate index in a table for the given key value / object. 
+an ideal hash function the generates a unquie index for every key, such type of hash functions are called as perfect hash function. 
