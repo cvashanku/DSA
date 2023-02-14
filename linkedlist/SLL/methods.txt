@@ -1,0 +1,20 @@
+single linked list
+-------------------
+01) Inserting the data first         ------------> ok
+02) Inserting the data last        --------------> ok
+03) Inserting the data at position        -------> ok
+04) Sorted Insertion Asc/Desc        ------------> ok
+05) Traversing or Displaying        -------------> ok
+06) Size or Length of list	   --------------> ok
+07) Reverse List        -------------------------> ok
+08) Searching        ----------------------------> ok
+09) Deleting from first        ------------------> ok
+10) Deleting from last        -------------------> ok
+11) Delete from position        -----------------> ok
+12) Deleting Element       - --------------------> ok
+13) Deleting Elements        --------------------> ok
+14) Deleting Duplicates        ------------------> ok
+15) Copy the reversed list        ---------------> ok
+16) Copy of original list        ----------------> ok
+17) Comparing two list objects ------------------> ok
+18) Finding nth node from begining and ending ---> ok

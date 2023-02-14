@@ -1,0 +1,23 @@
+LINKED LIST DATA STRUCTURE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+the problems with arrays are:
+
+1) size if always fixed.
+2) inserting and deleting is very difficult.
+
+to overcome these problems, we have linked list data structure.
+
+linked list:
+~~~~~~~~~~~~
+it is collection of nodes which are growable. during execution we can insert and delete nodes from linked list. linked list is the best data structure for inserting and deleting elements.
+
+accessing elements ----> best -----> arrays
+insert/delete ---------> best -----> linked list
+
+the following are the four types of linked lists are existed in java
+
+1) single linked list
+2) double linked list
+3) circular single linked list
+4) circular double linked list
