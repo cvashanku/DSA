@@ -1,0 +1,30 @@
+stack data structure:
+~~~~~~~~~~~~~~~~~~~~~
+a stack is a basic data structure, it follows LIFO i.e. last-in-first-out. The item which is inserted at last will be the item removed first.
+
+Ex:
+---
+	Recursion
+	Stack of plats
+	books in a box
+	etc
+
+the following are the common operations that we can perform on stack
+
+push ------> add element 
+pop -------> remove element
+peek ------> top most element
+size ------> number of elements
+isempty ---> returns True if stack is empty
+display ---> travese each element 
+search ----> find for an object
+
+Q) What is the difference between pop() and peek() method?
+----------------------------------------------------------
+pop() method will remove and return top element in the stack, but peek() method will return top element in the stack, it wn't perform delete operation.
+
+representation of stack
+-----------------------
+1) Implementation of stack by using arrays
+2) Implementation of stack by using linked list (SLL)
+3) Implementation of stack by using predefined class (java.util.Stack)
