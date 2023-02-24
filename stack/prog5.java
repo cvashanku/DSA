@@ -22,5 +22,6 @@ class Test
     System.out.println(s.search("FFF"));//-1
     System.out.println(s.pop());//EEE
     System.out.println(s);//[AAA,BBB,CCC,DDD]
+
   }
 }
