@@ -208,6 +208,57 @@ class SLL
       temp=temp.next;
     }
   }
+  
+  void deleteElement(int value)
+  {
+    Node temp=head;
+    if(temp==null)
+    {
+      System.out.println("SLL is empty");
+      return;
+    }
+    if(temp.data==value)
+    {
+      head=head.next;
+      size--;
+      return;
+    }
+    while(temp.next!=null)
+    {
+      if(temp.next.data==value)
+      {
+        temp.next=temp.next.next;
+        size--;
+        return;
+      }
+      temp=temp.next;
+    }
+  } 
+
+  void deleteElements(int value)
+  {
+    Node temp=head;
+    if(temp==null)
+    {
+      System.out.println("SLL is empty");
+      return;
+    }
+    if(temp.data==value)
+    {
+      head=head.next;
+      size--;
+    }
+    while(temp.next!=null)
+    {
+      if(temp.next.data==value)
+      {
+        temp.next=temp.next.next;
+        size--;
+      }
+      if(temp.next!=null)
+        temp=temp.next;
+    }
+  }   
 
 }
 
@@ -217,15 +268,14 @@ class Test
    {
      SLL list=new SLL();
      list.addLast(111);
-     list.addLast(222);
+     list.addLast(444);
      list.addLast(333);
      list.addLast(444);
      list.addLast(555);
      list.addLast(666);
-     list.addLast(777);
+     list.addLast(444);
      list.traverse();
-     list.deletePos(7);
+     list.deleteElements(444);
      list.traverse();
-     System.out.println(list.search(66));  
    }
 }
