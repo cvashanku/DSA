@@ -11,6 +11,12 @@ class SLL
     Node(int data)
     {
       this.data=data;
+      this.next=null;
+      size++;
+    }
+    Node(int data,Node next)
+    {
+      this.data=data;
       this.next=next;
       size++;
     }
@@ -260,6 +266,66 @@ class SLL
     }
   }   
 
+  void reverse()
+  {
+    Node currNode=head,prev=null,next=null;
+    while(currNode!=null)
+    {
+      next=currNode.next;
+      currNode.next=prev;
+      prev=currNode;
+      currNode=next;
+    }
+    head=prev;
+  }
+
+  //Note:cumpolsary the list must be in sorted form
+  void removeDuplicates()
+  {
+     Node currNode=head;
+     while(currNode!=null)
+     {
+       if(currNode.next!=null && currNode.data==currNode.next.data)
+         currNode.next=currNode.next.next;
+       else
+         currNode=currNode.next;
+     }
+  }
+
+  SLL copyReversed()
+  {
+    Node currNode=head,temp1=null,temp2=null;
+    while(currNode!=null)
+    {
+      temp2=new Node(currNode.data,temp1);
+      currNode=currNode.next;
+      temp1=temp2;
+    }
+    SLL obj=new SLL();
+    obj.head=temp1;
+    return obj;
+  }
+
+  SLL copyList()
+  {
+    Node headNode=null,tailNode=null,tempNode=null,currNode=head;
+    if(currNode==null)
+      return null;
+    headNode=new Node(currNode.data,null);
+    tailNode=headNode;
+    currNode=currNode.next;
+    while(currNode!=null)
+    {
+      tempNode=new Node(currNode.data,null);
+      tailNode.next=tempNode;
+      tailNode=tempNode;
+      currNode=currNode.next;
+    }
+    SLL obj=new SLL();
+    obj.head=headNode;
+    return obj;
+  }
+
 }
 
 class Test
@@ -268,14 +334,12 @@ class Test
    {
      SLL list=new SLL();
      list.addLast(111);
-     list.addLast(444);
      list.addLast(333);
-     list.addLast(444);
      list.addLast(555);
-     list.addLast(666);
-     list.addLast(444);
-     list.traverse();
-     list.deleteElements(444);
-     list.traverse();
+     list.addLast(222);
+     list.addLast(444);;
+     list.traverse();//111==>333==>555==>222==>444==>null
+     SLL newlist=list.copyList();
+     newlist.traverse();//111==>333==>555==>222==>444==>null
    }
 }
